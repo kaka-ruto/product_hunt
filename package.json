@@ -1,0 +1,25 @@
+{
+  "name": "producthunt",
+  "version": "1.0.0",
+  "description": "product hunt clone using react js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/express-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borenho/product_hunt.git"
+  },
+  "keywords": [
+    "product_hunt"
+  ],
+  "author": "Kibe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borenho/product_hunt/issues"
+  },
+  "homepage": "https://github.com/borenho/product_hunt#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
