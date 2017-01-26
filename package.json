@@ -1,10 +1,12 @@
 {
-  "name": "producthunt",
+  "name": "product_hunt",
   "version": "1.0.0",
   "description": "product hunt clone using react js",
   "main": "index.js",
   "scripts": {
-    "start": "node server/express-server.js"
+    "start": "node server/express-server.js",
+    "build": "browserify -t [ babelify --presets [ es2015 stage-0 react ] --plugins [transform-decorators-legacy] ] ./src/react-components/app.js -o ./public/js/app.js",
+    "build:watch": "watch 'npm run build' src"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,14 @@
   },
   "homepage": "https://github.com/borenho/product_hunt#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babelify": "^7.3.0",
+    "express": "^4.14.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "watch": "^1.0.1"
   }
 }
